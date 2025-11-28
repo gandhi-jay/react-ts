@@ -52,3 +52,19 @@ const handleArtworkResponse = (response: ArtworkResponse) => {
 
     console.log(response.artworks);
 }
+
+// & is merging, | is either or
+
+let role: 'admin' | 'user' | 'editor' | 'super' | -1;
+
+role = 'admin';
+// role = 'free'; // TS: Err
+role = -1;
+
+type Role = 'admin' | 'user' | 'editor' | 'super' | -1;
+
+function performAction(action: string, role: Role): void {
+    if (typeof role === 'string' && role === 'admin') {
+        // ...
+    }
+}

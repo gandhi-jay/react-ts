@@ -38,6 +38,6 @@ function voidFunc3(obj: {ff: AddFn}): void {
 // Storing union type with type aliases.
 type StringOrNum = string | number;
 let userId: StringOrNum;
-userid = '1';
+// userid = '1';
 
 
